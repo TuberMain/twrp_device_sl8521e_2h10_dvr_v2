@@ -1,0 +1,26 @@
+# mount point       fstype    device                                                                flags
+/spl                mtd       splloader                                                             flags=display="Spl";logical;
+/uboot              mtd       uboot                                                                 flags=display="Uboot";logical;
+/productinfo        ubifs     prodnv                                                                flags=display="Productinfo";logical;
+/miscdata           ubi       miscdata                                                              flags=display="Miscdata";logical;
+/ltefixnv1          ubi       l_fixnv1                                                              flags=display="Ltefixnv1";logical;
+/ltefixnv2          ubi       l_fixnv2                                                              flags=display="Ltefixnv2";logical;
+/lteruntimenv1      ubi       l_runtimenv1                                                          flags=display="Lteruntimenv1";logical;
+/lteruntimenv2      ubi       l_runtimenv2                                                          flags=display="Lteruntimenv2";logical;
+/ltemodem           ubi       l_modem                                                               flags=display="Ltemodem";logical;
+/ltedsp             ubi       l_ldsp                                                                flags=display="Ltedsp";logical;
+/ltegdsp            ubi       l_gdsp                                                                flags=display="Ltegdsp";logical;
+/pmsys              ubi       pm_sys                                                                flags=display="Pmsys";logical;
+/logo               ubi       logo                                                                  flags=display="Logo";logical;
+/fbootlogo          ubi       fbootlogo                                                             flags=display="Fbootlogo";logical;
+/wcnfdl             ubi       wcnfdl                                                                flags=display="Wcnfdl";logical;
+/wcnmodem           ubi       wcnmodem                                                              flags=display="Wcnmodem";logical;
+/gnssmodem          ubi       gpsgl                                                                 flags=display="Gnssmodem";logical;
+/gnssbdmodem        ubi       gpsbd                                                                 flags=display="Gnssbdmodem";logical;
+/boot               ubi       boot                                                                  flags=display="Boot";backup=1;flashimg=1;logical;
+/system             ubifs     system                                                                flags=display="System";backup=1;logical;
+/system_image       emmc      system                                                                flags=display="System image";backup=1;flashimg=1;logical;
+/cache              ubifs     cache                                                                 flags=display="Cache";logical;
+/recovery           ubi       recovery                                                              flags=display="Recovery";backup=1;flashimg=1;logical;
+/misc               ubi       misc                                                                  flags=display="Misc";backup=1;flashimg=1;logical;
+/data               ubifs     userdata                                                              flags=display="Data";logical;
